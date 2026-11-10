@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T07:00:00+08:00",
+  "edition": 122,
+  "headline": {
+    "title": "[Sample] New chip export rules published; industry sees limited supply-chain impact",
+    "summary": "In this fictional story, regulators publish a revised export-control framework that adds reporting requirements for some advanced equipment. Several firms say near-term orders are unaffected but compliance paperwork will increase.",
+    "why": "Rising compliance cost is the long-term variable to watch.",
+    "importance": 5,
+    "source_name": "Sample Finance Daily",
+    "source_url": "https://example.com/sample/2026-11-09/h",
+    "original_title": "New chip export rules limited impact",
+    "original_lang": "en",
+    "published_at": "2026-11-09T06:05:00+08:00",
+    "tags": [
+      "semiconductors",
+      "policy",
+      "sample"
+    ]
+  },
+  "brief": "[Sample data] New chip export rules are seen as having limited near-term impact. A workflow tool adds native AI nodes. A new quarter of energy subsidies is announced.",
+  "sections": [
+    {
+      "id": "ai",
+      "items": [
+        {
+          "title": "[Sample] Obsidian Tech launches a voice-agent platform with 300 ms latency",
+          "summary": "The platform claims about 300 ms end-to-end latency and supports mixed-language customer service. Two restaurant chains appear as sample customers.",
+          "why": "Low latency decides whether voice AI feels natural.",
+          "importance": 4,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-09/a1",
+          "original_title": "Obsidian Tech launches voice agent platform",
+          "original_lang": "en",
+          "published_at": "2026-11-09T07:10:00+08:00",
+          "tags": [
+            "voice",
+            "agents",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Open community proposes a new long-document chunking benchmark",
+          "summary": "The benchmark compares chunking and re-ranking strategies on contracts and papers; re-ranking contributes the most.",
+          "why": "A direct guide to tuning for anyone building RAG.",
+          "importance": 3,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-09/a2",
+          "original_title": "New benchmark for long-document chunking",
+          "original_lang": "en",
+          "published_at": "2026-11-09T05:30:00+08:00",
+          "tags": [
+            "rag",
+            "benchmark",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Pilot schools require students to disclose how they used AI on homework",
+          "summary": "Teachers use process logs instead of detection tools to review AI use in a sample pilot program.",
+          "why": "Verifiable learning records beat detection.",
+          "importance": 3,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-09/a3",
+          "original_title": "Pilot requires AI-use disclosure on homework",
+          "original_lang": "en",
+          "published_at": "2026-11-09T04:40:00+08:00",
+          "tags": [
+            "education",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Small team replaces costly labeling outsourcing with a 20-line script",
+          "summary": "The author pre-labels with a model and spot-checks by hand, cutting labeling cost by about 70%.",
+          "why": "A pattern teams on a budget can copy.",
+          "importance": 2,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-09/a4",
+          "original_title": "A twenty-line script replaces labeling outsourcing",
+          "original_lang": "en",
+          "published_at": "2026-11-09T03:15:00+08:00",
+          "tags": [
+            "labeling",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "items": [
+        {
+          "title": "[Sample] Workflow tool adds native AI nodes with structured output",
+          "summary": "The update adds a node that takes a JSON schema, retries on failure and logs the raw response.",
+          "why": "Directly cuts the maintenance cost of malformed LLM output.",
+          "importance": 5,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-09/b1",
+          "original_title": "Workflow tool adds native AI nodes",
+          "original_lang": "en",
+          "published_at": "2026-11-09T06:50:00+08:00",
+          "tags": [
+            "n8n",
+            "llm",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Static sites backed by a folder of JSON become a personal-database trend",
+          "summary": "More people keep data as version-controlled JSON and render it with a static site, skipping database upkeep.",
+          "why": "Traceable and revertible, ideal for personal projects.",
+          "importance": 3,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-09/b2",
+          "original_title": "Static sites backed by JSON folders",
+          "original_lang": "en",
+          "published_at": "2026-11-09T02:30:00+08:00",
+          "tags": [
+            "static sites",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Designing webhook retries: three ways to build idempotency keys",
+          "summary": "The post compares request IDs, content hashes and resource versions as idempotency keys.",
+          "why": "Prevents duplicate commits when you re-run the same day.",
+          "importance": 2,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-09/b3",
+          "original_title": "Three ways to build webhook idempotency keys",
+          "original_lang": "en",
+          "published_at": "2026-11-09T01:15:00+08:00",
+          "tags": [
+            "api",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biotech",
+      "items": [
+        {
+          "title": "[Sample] Protein-structure tool update improves membrane-protein accuracy",
+          "summary": "A new version adds dedicated training data for membrane proteins, cutting error by 15% on a sample test set.",
+          "why": "Membrane proteins are targets for many drugs.",
+          "importance": 4,
+          "source_name": "Example Biotech News",
+          "source_url": "https://example.com/sample/2026-11-09/c1",
+          "original_title": "Protein structure tool improves membrane predictions",
+          "original_lang": "en",
+          "published_at": "2026-11-09T05:45:00+08:00",
+          "tags": [
+            "protein",
+            "ai",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Wearable blood-oxygen patch receives registration approval",
+          "summary": "A patch that monitors blood oxygen continuously is approved, aimed at elderly home care.",
+          "why": "Home monitoring makes chronic-disease care more timely.",
+          "importance": 3,
+          "source_name": "Sample Biomed Weekly",
+          "source_url": "https://example.com/sample/2026-11-09/c2",
+          "original_title": "Home blood-oxygen patch approved",
+          "original_lang": "en",
+          "published_at": "2026-11-09T04:10:00+08:00",
+          "tags": [
+            "medtech",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Gene editing: salt-tolerant rice enters field trials",
+          "summary": "Researchers planted salt-tolerant rice in a coastal test field; early results show smaller yield losses.",
+          "why": "Stress-tolerant crops matter more as the climate shifts.",
+          "importance": 3,
+          "source_name": "Example Biotech News",
+          "source_url": "https://example.com/sample/2026-11-09/c3",
+          "original_title": "Salt-tolerant rice enters field trials",
+          "original_lang": "en",
+          "published_at": "2026-11-09T03:00:00+08:00",
+          "tags": [
+            "agriculture",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taiwan",
+      "items": [
+        {
+          "title": "[Sample] New quarter of energy subsidies announced, household tiers adjusted",
+          "summary": "The sample plan adjusts subsidy tiers so households with lower monthly usage receive a larger share of relief.",
+          "why": "Directly affects household electricity bills.",
+          "importance": 4,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-09/d1",
+          "original_title": "New energy subsidy plan announced",
+          "original_lang": "en",
+          "published_at": "2026-11-09T06:40:00+08:00",
+          "tags": [
+            "household",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Southern science park opens a shared lab that startups rent by the hour",
+          "summary": "The shared lab offers basic measurement equipment, billed by usage hours.",
+          "why": "Lowers the starting cost for hardware startups.",
+          "importance": 3,
+          "source_name": "Sample Finance Daily",
+          "source_url": "https://example.com/sample/2026-11-09/d2",
+          "original_title": "Shared lab opens in southern science park",
+          "original_lang": "en",
+          "published_at": "2026-11-09T05:15:00+08:00",
+          "tags": [
+            "startups",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] High-speed rail and conventional rail trial a joint ticket",
+          "summary": "Travelers can buy cross-system tickets on one platform, with a 10% discount during the trial.",
+          "why": "Easier transfers.",
+          "importance": 2,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-09/d3",
+          "original_title": "Joint rail ticket trial begins",
+          "original_lang": "en",
+          "published_at": "2026-11-09T03:50:00+08:00",
+          "tags": [
+            "transport",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Ministry publishes this year’s independent bookstore grants",
+          "summary": "More than sixty shops receive grants, focused on community events and digitization.",
+          "why": "How independent bookstores plan to survive.",
+          "importance": 2,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-09/d4",
+          "original_title": "Independent bookstore grant list released",
+          "original_lang": "en",
+          "published_at": "2026-11-09T02:05:00+08:00",
+          "tags": [
+            "culture",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "items": [
+        {
+          "title": "[Sample] Major central banks signal a slower pace of rate hikes",
+          "summary": "In this fictional report, minutes mention cooling inflation and markets expect a pause in early next year.",
+          "why": "Rate paths drive currencies and investment.",
+          "importance": 4,
+          "source_name": "Example Global",
+          "source_url": "https://example.com/sample/2026-11-09/e1",
+          "original_title": "Central banks signal pause in rate hikes",
+          "original_lang": "en",
+          "published_at": "2026-11-09T06:25:00+08:00",
+          "tags": [
+            "finance",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Rare-earth mine approved in a southern-hemisphere country",
+          "summary": "After environmental approval, the project is expected to start production within three years, supplying EV-motor materials.",
+          "why": "Diversifies critical-mineral supply.",
+          "importance": 3,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-09/e2",
+          "original_title": "Rare earth mine approved",
+          "original_lang": "en",
+          "published_at": "2026-11-09T04:20:00+08:00",
+          "tags": [
+            "minerals",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Cargo spacecraft docks smoothly with the space station",
+          "summary": "The cargo craft carried experiments and supplies and completed docking without issues.",
+          "why": "Routine resupply keeps experiments running.",
+          "importance": 2,
+          "source_name": "Example Global",
+          "source_url": "https://example.com/sample/2026-11-09/e3",
+          "original_title": "Cargo spacecraft docks with station",
+          "original_lang": "en",
+          "published_at": "2026-11-09T01:50:00+08:00",
+          "tags": [
+            "space",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "items": [
+        {
+          "title": "[Sample] Baseball league publishes the new season schedule; opener moves to Friday night",
+          "summary": "To boost attendance, the league moves its opening game to Friday night and adds more weeknight games.",
+          "why": "Scheduling affects fan turnout.",
+          "importance": 3,
+          "source_name": "Sample Sports Daily",
+          "source_url": "https://example.com/sample/2026-11-09/f1",
+          "original_title": "New season schedule released, opener on Friday",
+          "original_lang": "en",
+          "published_at": "2026-11-09T06:15:00+08:00",
+          "tags": [
+            "baseball",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Tennis open shocker: top seed out in the first round",
+          "summary": "In a sample match, the top seed lost in straight sets to a qualifier.",
+          "why": "The draw is now wide open.",
+          "importance": 3,
+          "source_name": "Demo Sports",
+          "source_url": "https://example.com/sample/2026-11-09/f2",
+          "original_title": "Top seed upset in first round",
+          "original_lang": "en",
+          "published_at": "2026-11-09T05:00:00+08:00",
+          "tags": [
+            "tennis",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Wearable data: heart-rate variability can flag overtraining",
+          "summary": "Three consecutive days of low recovery HRV correlated with accumulated fatigue.",
+          "why": "Amateurs can use a watch to avoid injury.",
+          "importance": 2,
+          "source_name": "Demo Sports",
+          "source_url": "https://example.com/sample/2026-11-09/f3",
+          "original_title": "HRV can flag overtraining",
+          "original_lang": "en",
+          "published_at": "2026-11-09T02:40:00+08:00",
+          "tags": [
+            "sports science",
+            "sample"
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "feeds": 39,
+    "fetched": 831,
+    "kept": 21,
+    "jev_cost_usd": 0.0013,
+    "llm_cost_usd": 0.031
+  }
+}

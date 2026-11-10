@@ -1,0 +1,14 @@
+{
+  "name": "daily-paper",
+  "version": "1.0.0",
+  "description": "Static daily newspaper template: n8n commits a JSON file per day, Cloudflare Pages builds and deploys it.",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/validate.mjs && node scripts/build.mjs",
+    "dev": "npm run build && npx --yes serve dist -l 3000"
+  },
+  "license": "MIT"
+}

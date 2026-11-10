@@ -1,0 +1,367 @@
+{
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T07:00:00+08:00",
+  "edition": 121,
+  "headline": {
+    "title": "[Sample] Offshore wind farm joins the grid as renewables pass 20% for the first time",
+    "summary": "In this fictional sample story, a gigawatt-class offshore wind farm completes grid connection, lifting the renewable share of generation above one fifth this quarter. Battery storage came online at the same time to smooth the afternoon peak.",
+    "why": "It marks the shift from building capacity to keeping supply stable.",
+    "importance": 5,
+    "source_name": "Sample Daily Wire",
+    "source_url": "https://example.com/sample/2026-11-08/h",
+    "original_title": "Offshore wind farm connects, renewables top 20%",
+    "original_lang": "en",
+    "published_at": "2026-11-08T06:10:00+08:00",
+    "tags": [
+      "energy",
+      "sample"
+    ]
+  },
+  "brief": "[Sample data] A new offshore wind farm lifts renewables above 20% of generation. A tool maker ships a small AI model that runs offline. A biotech firm reports early data on a new vaccine carrier.",
+  "sections": [
+    {
+      "id": "ai",
+      "items": [
+        {
+          "title": "[Sample] Mirror Lake AI unveils a 3B model built for offline laptops",
+          "summary": "The fictional company released a 3-billion-parameter language model that it says runs smoothly on a laptop without a GPU. Benchmark scores are close to a previous-generation 7B model.",
+          "why": "Smaller, stronger models make private on-device AI practical.",
+          "importance": 4,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-08/a1",
+          "original_title": "Mirror Lake AI unveils 3B model for offline laptops",
+          "original_lang": "en",
+          "published_at": "2026-11-08T07:40:00+08:00",
+          "tags": [
+            "models",
+            "edge",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Survey: six in ten dev teams now use AI coding assistants every day",
+          "summary": "A sample annual survey finds most teams use an AI coding assistant at least weekly, but only three in ten have written review guidelines for it.",
+          "why": "Tooling adoption is outrunning process, and risk management is the next gap.",
+          "importance": 3,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-08/a2",
+          "original_title": "Survey: 60% of dev teams use AI coding assistants daily",
+          "original_lang": "en",
+          "published_at": "2026-11-08T05:20:00+08:00",
+          "tags": [
+            "dev",
+            "survey",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Open-source multimodal search kit handles mixed text and image queries",
+          "summary": "The new kit indexes documents, images and tables together. The author provides a ten-line quick-start example.",
+          "why": "A low-friction option for small teams building internal knowledge bases.",
+          "importance": 3,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-08/a3",
+          "original_title": "Open-source multimodal retrieval kit released",
+          "original_lang": "en",
+          "published_at": "2026-11-08T04:55:00+08:00",
+          "tags": [
+            "open source",
+            "retrieval",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Study: adding a counter-example to the prompt reduces summary hallucinations",
+          "summary": "In a sample experiment, including one deliberately wrong example cut fabricated facts in summaries by about a third.",
+          "why": "You can improve quality without touching the model, which suits automation pipelines.",
+          "importance": 2,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-08/a4",
+          "original_title": "Negative examples cut summarization hallucinations",
+          "original_lang": "en",
+          "published_at": "2026-11-08T03:30:00+08:00",
+          "tags": [
+            "research",
+            "prompting",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "items": [
+        {
+          "title": "[Sample] Workflow platform adds failure-retry and alert templates",
+          "summary": "Built-in templates now back off and retry when an API call fails, then send a push notification after three failures.",
+          "why": "Unattended schedules fail silently; templates like this are worth adopting as-is.",
+          "importance": 4,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-08/b1",
+          "original_title": "Workflow platform adds retry and alert templates",
+          "original_lang": "en",
+          "published_at": "2026-11-08T06:45:00+08:00",
+          "tags": [
+            "n8n",
+            "ops",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] RSS makes a comeback as a low-cost personal news feed",
+          "summary": "A sample essay argues that RSS plus automatic summaries is the simplest way to avoid algorithmic feeds, and lists common de-duplication tactics.",
+          "why": "The barrier to a self-hosted news feed keeps falling.",
+          "importance": 3,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-08/b2",
+          "original_title": "Why RSS is back for personal news feeds",
+          "original_lang": "en",
+          "published_at": "2026-11-08T02:10:00+08:00",
+          "tags": [
+            "rss",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Time-zone traps in scheduled jobs: when daylight saving causes double runs",
+          "summary": "Three cases where time-zone settings caused duplicate or skipped runs, with advice to store UTC and set the display zone explicitly.",
+          "why": "Anything that publishes at a fixed local time needs this care.",
+          "importance": 2,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-08/b3",
+          "original_title": "Time-zone traps in scheduled jobs",
+          "original_lang": "en",
+          "published_at": "2026-11-08T01:40:00+08:00",
+          "tags": [
+            "scheduling",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biotech",
+      "items": [
+        {
+          "title": "[Sample] Cypress Bio reports phase 1 data for a new mRNA vaccine carrier",
+          "summary": "Sample data show higher antibody levels and less injection-site discomfort in a small trial. The company plans a phase 2 study next year.",
+          "why": "The delivery carrier is the bottleneck for mRNA drugs; improvements widen what they can treat.",
+          "importance": 4,
+          "source_name": "Sample Biomed Weekly",
+          "source_url": "https://example.com/sample/2026-11-08/c1",
+          "original_title": "Cypress Bio reports phase 1 carrier data",
+          "original_lang": "en",
+          "published_at": "2026-11-08T05:50:00+08:00",
+          "tags": [
+            "vaccine",
+            "clinical",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Sequencing costs fall again: a whole genome now under $200",
+          "summary": "A sample report says a new-generation sequencer pushes per-person whole-genome cost below $200, making it viable for checkup packages.",
+          "why": "Lower cost accelerates precision medicine.",
+          "importance": 3,
+          "source_name": "Example Biotech News",
+          "source_url": "https://example.com/sample/2026-11-08/c2",
+          "original_title": "Whole-genome sequencing falls below $200",
+          "original_lang": "en",
+          "published_at": "2026-11-08T04:15:00+08:00",
+          "tags": [
+            "sequencing",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Gut microbiome study links high-fiber diets with better sleep",
+          "summary": "A small observational study found slightly better sleep efficiency among high-fiber eaters, but the authors stress the sample is limited and the link is not causal.",
+          "why": "A reminder that correlation is not causation.",
+          "importance": 2,
+          "source_name": "Sample Biomed Weekly",
+          "source_url": "https://example.com/sample/2026-11-08/c3",
+          "original_title": "Gut microbiome and sleep quality: early study",
+          "original_lang": "en",
+          "published_at": "2026-11-08T03:05:00+08:00",
+          "tags": [
+            "nutrition",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taiwan",
+      "items": [
+        {
+          "title": "[Sample] Taipei adds night bus routes, extended to 2 a.m. on weekends",
+          "summary": "The city is trialling three night routes along major corridors at regular bus fares.",
+          "why": "Affects night commuters and weekend travelers.",
+          "importance": 3,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-08/d1",
+          "original_title": "Night bus routes added in Taipei",
+          "original_lang": "en",
+          "published_at": "2026-11-08T06:30:00+08:00",
+          "tags": [
+            "transport",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Chip fabs expand, universities launch cross-department micro-programs",
+          "summary": "Several universities and industry partners opened six-week micro-programs covering process basics and data analysis; seats sold out.",
+          "why": "Industry–academia programs may become the norm for closing the talent gap.",
+          "importance": 4,
+          "source_name": "Sample Finance Daily",
+          "source_url": "https://example.com/sample/2026-11-08/d2",
+          "original_title": "Universities launch micro-programs for chip talent",
+          "original_lang": "en",
+          "published_at": "2026-11-08T05:40:00+08:00",
+          "tags": [
+            "industry",
+            "education",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Outer typhoon circulation brings brief showers to the northeast on Monday",
+          "summary": "The weather bureau expects higher rain chances in the early morning, turning cloudy by afternoon with slightly lower temperatures.",
+          "why": "Commuters should carry an umbrella.",
+          "importance": 2,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-08/d3",
+          "original_title": "Brief showers for the northeast on Monday",
+          "original_lang": "en",
+          "published_at": "2026-11-08T04:00:00+08:00",
+          "tags": [
+            "weather",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Night markets adopt mobile ordering; vendors complain about fees",
+          "summary": "A sample survey says about 40% of stalls use mobile ordering but many object to platform commissions and want government mediation.",
+          "why": "Digitization costs for small merchants are worth tracking.",
+          "importance": 2,
+          "source_name": "Sample Finance Daily",
+          "source_url": "https://example.com/sample/2026-11-08/d4",
+          "original_title": "Night market vendors complain about ordering fees",
+          "original_lang": "en",
+          "published_at": "2026-11-08T02:50:00+08:00",
+          "tags": [
+            "business",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "items": [
+        {
+          "title": "[Sample] Regional climate summit closes with a shipping decarbonization roadmap",
+          "summary": "In this fictional story, several countries sign a roadmap aiming for new vessels to run on low-carbon fuels within ten years.",
+          "why": "Shipping is hard to decarbonize, and the deal affects global supply-chain costs.",
+          "importance": 4,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-08/e1",
+          "original_title": "Climate summit closes with shipping roadmap",
+          "original_lang": "en",
+          "published_at": "2026-11-08T06:00:00+08:00",
+          "tags": [
+            "climate",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] A European country passes a data-portability law",
+          "summary": "The law requires large platforms to offer exports in a standard format, with fines up to 2% of revenue for violations.",
+          "why": "Portability lowers the cost of switching services.",
+          "importance": 3,
+          "source_name": "Example Global",
+          "source_url": "https://example.com/sample/2026-11-08/e2",
+          "original_title": "New data portability law passes",
+          "original_lang": "en",
+          "published_at": "2026-11-08T03:45:00+08:00",
+          "tags": [
+            "regulation",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Global energy outlook: oil demand growth to slow next year",
+          "summary": "A sample forecast says rising EV adoption will make next year’s oil demand growth smaller than this year’s.",
+          "why": "Energy prices feed into inflation and exchange rates.",
+          "importance": 3,
+          "source_name": "Example Global",
+          "source_url": "https://example.com/sample/2026-11-08/e3",
+          "original_title": "Oil demand growth to slow next year",
+          "original_lang": "en",
+          "published_at": "2026-11-08T02:20:00+08:00",
+          "tags": [
+            "energy",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "items": [
+        {
+          "title": "[Sample] City marathon opens registration; 30,000 spots gone in ten minutes",
+          "summary": "The sample “Example City Marathon” opened sign-ups, the system briefly choked, and organizers promised an extra afternoon wave.",
+          "why": "Registration systems remain an annual pain point for big races.",
+          "importance": 2,
+          "source_name": "Sample Sports Daily",
+          "source_url": "https://example.com/sample/2026-11-08/f1",
+          "original_title": "City marathon sells out in ten minutes",
+          "original_lang": "en",
+          "published_at": "2026-11-08T06:20:00+08:00",
+          "tags": [
+            "running",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Pro basketball: home team rallies in the fourth for a one-point win",
+          "summary": "The home side went on a 9–2 run in the final two minutes to win by a single point.",
+          "why": "The race for seeding is heating up.",
+          "importance": 3,
+          "source_name": "Demo Sports",
+          "source_url": "https://example.com/sample/2026-11-08/f2",
+          "original_title": "Home team rallies for one-point win",
+          "original_lang": "en",
+          "published_at": "2026-11-08T05:05:00+08:00",
+          "tags": [
+            "basketball",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Sports science: periodized training works better for amateur runners",
+          "summary": "A controlled study found amateur runners on periodized plans improved their 10K times more on average.",
+          "why": "How you schedule training matters more than simply adding volume.",
+          "importance": 2,
+          "source_name": "Demo Sports",
+          "source_url": "https://example.com/sample/2026-11-08/f3",
+          "original_title": "Periodized training helps amateur runners",
+          "original_lang": "en",
+          "published_at": "2026-11-08T01:30:00+08:00",
+          "tags": [
+            "training",
+            "sample"
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "feeds": 39,
+    "fetched": 796,
+    "kept": 21,
+    "jev_cost_usd": 0.0011,
+    "llm_cost_usd": 0.028
+  }
+}

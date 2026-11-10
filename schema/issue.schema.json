@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://daily-paper.invalid/schema/issue.schema.json",
+  "title": "Daily Paper issue",
+  "type": "object",
+  "required": ["date", "generated_at", "edition", "headline", "brief", "sections", "stats"],
+  "properties": {
+    "date": { "type": "string", "format": "date", "description": "Issue date YYYY-MM-DD; must match the file name" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "edition": { "type": "integer", "minimum": 1, "description": "Issue number (edition)" },
+    "headline": { "$ref": "#/definitions/item" },
+    "brief": { "type": "string", "minLength": 1, "description": "Three-sentence brief of the day" },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/section" }
+    },
+    "stats": {
+      "type": "object",
+      "required": ["feeds", "fetched", "kept", "jev_cost_usd", "llm_cost_usd"],
+      "properties": {
+        "feeds": { "type": "integer", "minimum": 0 },
+        "fetched": { "type": "integer", "minimum": 0 },
+        "kept": { "type": "integer", "minimum": 0 },
+        "jev_cost_usd": { "type": "number", "minimum": 0 },
+        "llm_cost_usd": { "type": "number", "minimum": 0 }
+      }
+    }
+  },
+  "definitions": {
+    "section": {
+      "type": "object",
+      "required": ["id", "items"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
+        "name": { "type": "string", "minLength": 1, "description": "Optional; the display name comes from site.config.json" },
+        "items": { "type": "array", "items": { "$ref": "#/definitions/item" } }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": ["title", "summary", "why", "importance", "source_name", "source_url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "why": { "type": "string", "minLength": 1 },
+        "importance": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "source_name": { "type": "string", "minLength": 1 },
+        "source_url": { "type": "string", "format": "uri" },
+        "original_title": { "type": "string" },
+        "original_lang": { "type": "string", "enum": ["en", "zh"] },
+        "published_at": { "type": "string", "format": "date-time" },
+        "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "image": { "type": "string", "format": "uri", "description": "Optional: image URL (https)" },
+        "image_alt": { "type": "string" }
+      }
+    }
+  }
+}

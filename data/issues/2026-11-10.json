@@ -1,0 +1,364 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T07:00:00+08:00",
+  "edition": 123,
+  "headline": {
+    "title": "[Sample] Open speech model Lumen-7 released; phones can now translate live, offline",
+    "summary": "In this fictional story, an open-source community releases a speech model called Lumen-7 that performs Chinese–English interpretation on mid-range phones with under a second of latency. Developers have published a mobile demo app.",
+    "why": "Live interpretation moves from the cloud to the device, which is friendlier to privacy and cost.",
+    "importance": 5,
+    "source_name": "Sample Wire",
+    "source_url": "https://example.com/sample/2026-11-10/h",
+    "original_title": "Lumen-7 open model brings offline live translation to phones",
+    "original_lang": "en",
+    "published_at": "2026-11-10T06:30:00+08:00",
+    "tags": [
+      "speech",
+      "open source",
+      "sample"
+    ]
+  },
+  "brief": "[Sample data] An open speech model makes offline phone interpretation real. An automation platform strengthens error handling and alerts. Biotech and energy each have a development worth following.",
+  "sections": [
+    {
+      "id": "ai",
+      "items": [
+        {
+          "title": "[Sample] Mirror Lake AI loosens the license on its 3B model for commercial use",
+          "summary": "The company moves its 3B model to a permissive license that allows commercial use and fine-tuning, and ships quantized builds.",
+          "why": "A looser license makes small businesses more willing to adopt it.",
+          "importance": 4,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-10/a1",
+          "original_title": "Mirror Lake loosens license for its 3B model",
+          "original_lang": "en",
+          "published_at": "2026-11-10T07:20:00+08:00",
+          "tags": [
+            "license",
+            "models",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Study: multi-agent setups beat a single agent on long tasks",
+          "summary": "Splitting planning, execution and checking into three roles raised task success by about 10% in a sample study.",
+          "why": "An architecture to consider when building automation agents.",
+          "importance": 3,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-10/a2",
+          "original_title": "Multi-agent setups beat single agents on long tasks",
+          "original_lang": "en",
+          "published_at": "2026-11-10T05:35:00+08:00",
+          "tags": [
+            "agents",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Community text corpus adds 100,000 news and public documents",
+          "summary": "The community-maintained corpus ships a new version with de-identification and licensing notes.",
+          "why": "An important resource for training and evaluating language models.",
+          "importance": 3,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-10/a3",
+          "original_title": "Community corpus updated",
+          "original_lang": "en",
+          "published_at": "2026-11-10T04:25:00+08:00",
+          "tags": [
+            "corpus",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Personal knowledge tool adds automatic weekly review summaries",
+          "summary": "The tool gathers a week of notes and links into an actionable to-do list.",
+          "why": "Turns collecting into doing.",
+          "importance": 2,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-10/a4",
+          "original_title": "Weekly review auto-summaries arrive",
+          "original_lang": "en",
+          "published_at": "2026-11-10T02:45:00+08:00",
+          "tags": [
+            "notes",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "items": [
+        {
+          "title": "[Sample] Automation platform improves error handling: replay a failed run in one click",
+          "summary": "The new version keeps the input data in execution logs, lets you rerun from the failed node and supports custom alerts.",
+          "why": "A failed schedule no longer means rerunning everything.",
+          "importance": 4,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-10/b1",
+          "original_title": "Automation platform strengthens error handling",
+          "original_lang": "en",
+          "published_at": "2026-11-10T06:55:00+08:00",
+          "tags": [
+            "n8n",
+            "ops",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Clearer documentation for CI concurrency controls",
+          "summary": "The docs now explain the difference between queueing and cancelling in concurrency groups.",
+          "why": "Avoids two deploys overwriting each other.",
+          "importance": 3,
+          "source_name": "Demo Tech Review",
+          "source_url": "https://example.com/sample/2026-11-10/b2",
+          "original_title": "Clearer docs for CI concurrency",
+          "original_lang": "en",
+          "published_at": "2026-11-10T03:35:00+08:00",
+          "tags": [
+            "ci",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Common mistakes when deploying static sites to a hosting platform",
+          "summary": "A checklist of three usual problems: wrong project name, missing permissions and branch settings.",
+          "why": "A checklist for when a deploy gets stuck.",
+          "importance": 2,
+          "source_name": "Sample Tech Weekly",
+          "source_url": "https://example.com/sample/2026-11-10/b3",
+          "original_title": "Common static-site deployment errors",
+          "original_lang": "en",
+          "published_at": "2026-11-10T01:20:00+08:00",
+          "tags": [
+            "deploy",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biotech",
+      "items": [
+        {
+          "title": "[Sample] Cypress Bio starts a phase 2 trial aiming to enroll 400 participants",
+          "summary": "The company announced its new-carrier vaccine has entered phase 2, with enrollment expected to finish by mid next year.",
+          "why": "Development moves one step forward.",
+          "importance": 4,
+          "source_name": "Sample Biomed Weekly",
+          "source_url": "https://example.com/sample/2026-11-10/c1",
+          "original_title": "Cypress Bio starts phase 2 trial",
+          "original_lang": "en",
+          "published_at": "2026-11-10T05:55:00+08:00",
+          "tags": [
+            "vaccine",
+            "clinical",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Organoid chips can pre-screen drug toxicity",
+          "summary": "A sample study shows liver-organoid chips predicted toxicity with 80% agreement.",
+          "why": "May reduce animal testing.",
+          "importance": 3,
+          "source_name": "Example Biotech News",
+          "source_url": "https://example.com/sample/2026-11-10/c2",
+          "original_title": "Organoid chips screen drug toxicity",
+          "original_lang": "en",
+          "published_at": "2026-11-10T04:30:00+08:00",
+          "tags": [
+            "organoids",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Health insurer discusses reimbursing digital therapeutics",
+          "summary": "A meeting mentioned evaluating whether digital therapies for insomnia and depression should be covered.",
+          "why": "Reimbursement is the key to commercializing digital therapeutics.",
+          "importance": 3,
+          "source_name": "Sample Biomed Weekly",
+          "source_url": "https://example.com/sample/2026-11-10/c3",
+          "original_title": "Insurer discusses digital therapeutics coverage",
+          "original_lang": "en",
+          "published_at": "2026-11-10T03:10:00+08:00",
+          "tags": [
+            "insurance",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taiwan",
+      "items": [
+        {
+          "title": "[Sample] After the wind-farm connection, energy storage is expanded",
+          "summary": "The operator announced new storage facilities to balance peak and off-peak supply.",
+          "why": "Stable supply is the next hurdle in the transition.",
+          "importance": 4,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-10/d1",
+          "original_title": "Energy storage expanded after wind connection",
+          "original_lang": "en",
+          "published_at": "2026-11-10T06:20:00+08:00",
+          "tags": [
+            "energy",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Night bus routes in Taipei exceed expectations in their first week",
+          "summary": "Average ridership topped thirty per trip in week one, and the city is considering more trips.",
+          "why": "A trial policy that appears to be working.",
+          "importance": 3,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-10/d2",
+          "original_title": "Night bus first-week ridership",
+          "original_lang": "en",
+          "published_at": "2026-11-10T05:25:00+08:00",
+          "tags": [
+            "transport",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Subsidy opens for small firms to adopt cloud archiving of e-invoices",
+          "summary": "Eligible companies can apply for software-adoption subsidies, with amounts depending on size.",
+          "why": "Eases paperwork for small businesses.",
+          "importance": 2,
+          "source_name": "Sample Finance Daily",
+          "source_url": "https://example.com/sample/2026-11-10/d3",
+          "original_title": "E-invoice cloud archiving subsidy",
+          "original_lang": "en",
+          "published_at": "2026-11-10T04:00:00+08:00",
+          "tags": [
+            "business",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Autumn foliage trails in the national park open for reservations",
+          "summary": "Popular trails use timed reservations to manage crowds and protect the environment.",
+          "why": "Book before you go.",
+          "importance": 2,
+          "source_name": "Sample News Network",
+          "source_url": "https://example.com/sample/2026-11-10/d4",
+          "original_title": "Foliage trails open for reservations",
+          "original_lang": "en",
+          "published_at": "2026-11-10T02:15:00+08:00",
+          "tags": [
+            "travel",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "items": [
+        {
+          "title": "[Sample] Sample economic outlook nudges global growth forecast up slightly",
+          "summary": "The report says resilient services lift the growth forecast by 0.1 percentage point.",
+          "why": "The overall backdrop looks slightly better.",
+          "importance": 4,
+          "source_name": "Example Global",
+          "source_url": "https://example.com/sample/2026-11-10/e1",
+          "original_title": "Global growth forecast revised up slightly",
+          "original_lang": "en",
+          "published_at": "2026-11-10T06:10:00+08:00",
+          "tags": [
+            "economy",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] A Nordic country trials a four-day work week, with positive first results",
+          "summary": "Participating firms report higher employee satisfaction and roughly flat output.",
+          "why": "Evidence for working-time reform.",
+          "importance": 3,
+          "source_name": "Sample Wire",
+          "source_url": "https://example.com/sample/2026-11-10/e2",
+          "original_title": "Four-day week trial shows positive results",
+          "original_lang": "en",
+          "published_at": "2026-11-10T04:45:00+08:00",
+          "tags": [
+            "work",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Polar station observes early winter ice formation",
+          "summary": "Observations show ice thicker than the five-year average.",
+          "why": "Single-year swings in climate data need careful reading.",
+          "importance": 2,
+          "source_name": "Example Global",
+          "source_url": "https://example.com/sample/2026-11-10/e3",
+          "original_title": "Early winter ice observed at polar station",
+          "original_lang": "en",
+          "published_at": "2026-11-10T01:40:00+08:00",
+          "tags": [
+            "climate",
+            "sample"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "items": [
+        {
+          "title": "[Sample] City marathon adds an afternoon wave and switches to a lottery",
+          "summary": "Organizers will use a lottery to avoid the rush when registration opens.",
+          "why": "A trade-off between fairness and system stability.",
+          "importance": 3,
+          "source_name": "Sample Sports Daily",
+          "source_url": "https://example.com/sample/2026-11-10/f1",
+          "original_title": "Marathon adds wave and switches to lottery",
+          "original_lang": "en",
+          "published_at": "2026-11-10T06:05:00+08:00",
+          "tags": [
+            "running",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Pro basketball rookie scores 34, setting a franchise record",
+          "summary": "In a sample game, the rookie made 12 shots and led the team to a third straight win.",
+          "why": "A rising star.",
+          "importance": 3,
+          "source_name": "Demo Sports",
+          "source_url": "https://example.com/sample/2026-11-10/f2",
+          "original_title": "Rookie scores 34 in franchise record",
+          "original_lang": "en",
+          "published_at": "2026-11-10T05:10:00+08:00",
+          "tags": [
+            "basketball",
+            "sample"
+          ]
+        },
+        {
+          "title": "[Sample] Swimming championships: freestyle relay team breaks the national record",
+          "summary": "The four-person relay team set a new national record of 3:12.",
+          "why": "A good sign ahead of the continental meet.",
+          "importance": 2,
+          "source_name": "Sample Sports Daily",
+          "source_url": "https://example.com/sample/2026-11-10/f3",
+          "original_title": "Freestyle relay breaks national record",
+          "original_lang": "en",
+          "published_at": "2026-11-10T02:35:00+08:00",
+          "tags": [
+            "swimming",
+            "sample"
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "feeds": 39,
+    "fetched": 812,
+    "kept": 21,
+    "jev_cost_usd": 0.0012,
+    "llm_cost_usd": 0.03
+  }
+}
