@@ -189,71 +189,6 @@
       ]
     },
     {
-      "id": "taiwan",
-      "items": [
-        {
-          "title": "[Sample] After the wind-farm connection, energy storage is expanded",
-          "summary": "The operator announced new storage facilities to balance peak and off-peak supply.",
-          "why": "Stable supply is the next hurdle in the transition.",
-          "importance": 4,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-10/d1",
-          "original_title": "Energy storage expanded after wind connection",
-          "original_lang": "en",
-          "published_at": "2026-11-10T06:20:00+08:00",
-          "tags": [
-            "energy",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Night bus routes in Taipei exceed expectations in their first week",
-          "summary": "Average ridership topped thirty per trip in week one, and the city is considering more trips.",
-          "why": "A trial policy that appears to be working.",
-          "importance": 3,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-10/d2",
-          "original_title": "Night bus first-week ridership",
-          "original_lang": "en",
-          "published_at": "2026-11-10T05:25:00+08:00",
-          "tags": [
-            "transport",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Subsidy opens for small firms to adopt cloud archiving of e-invoices",
-          "summary": "Eligible companies can apply for software-adoption subsidies, with amounts depending on size.",
-          "why": "Eases paperwork for small businesses.",
-          "importance": 2,
-          "source_name": "Sample Finance Daily",
-          "source_url": "https://example.com/sample/2026-11-10/d3",
-          "original_title": "E-invoice cloud archiving subsidy",
-          "original_lang": "en",
-          "published_at": "2026-11-10T04:00:00+08:00",
-          "tags": [
-            "business",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Autumn foliage trails in the national park open for reservations",
-          "summary": "Popular trails use timed reservations to manage crowds and protect the environment.",
-          "why": "Book before you go.",
-          "importance": 2,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-10/d4",
-          "original_title": "Foliage trails open for reservations",
-          "original_lang": "en",
-          "published_at": "2026-11-10T02:15:00+08:00",
-          "tags": [
-            "travel",
-            "sample"
-          ]
-        }
-      ]
-    },
-    {
       "id": "world",
       "items": [
         {
@@ -357,7 +292,7 @@
   "stats": {
     "feeds": 39,
     "fetched": 812,
-    "kept": 21,
+    "kept": 17,
     "jev_cost_usd": 0.0012,
     "llm_cost_usd": 0.03
   }

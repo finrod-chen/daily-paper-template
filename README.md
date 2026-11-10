@@ -14,14 +14,14 @@ A static, newspaper-style daily site. **n8n** commits one JSON file per day, and
 flowchart LR
   N8N["n8n<br/>RSS → scoring → LLM rewrite"] -- "PUT Contents API<br/>data/issues/YYYY-MM-DD.json" --> GH[GitHub repo]
   GH -- "push to main (Git integration)" --> CF["Cloudflare Pages<br/>npm run build (validate + build) → dist/"]
-  N8N -. "poll /latest.json<br/>date == today" .-> CF
+  N8N -. "poll the Cloudflare<br/>check run on the commit" .-> GH
   N8N -- "once live, send the URL" --> TG[Telegram]
 ```
 
 | Part | Responsibility |
 | --- | --- |
-| n8n (not in this repo) | Fetch RSS, score importance, rewrite with an LLM, commit the JSON, poll for the deploy, notify Telegram |
-| This repo | Validate, render, archive, expose the `/latest.json` checkpoint. Deployment is handled by Cloudflare's Git integration |
+| n8n (not in this repo) | Fetch RSS, score importance, rewrite with an LLM, commit the JSON, check the deploy via the GitHub check run, notify Telegram |
+| This repo | Validate, render, archive, expose a public `/latest.json` endpoint. Deployment is handled by Cloudflare's Git integration |
 
 ## Layout
 
@@ -59,7 +59,7 @@ npm run dev        # build, then serve dist/ at http://localhost:3000 with npx s
    - Environment variable (recommended): `NODE_VERSION` = `20`
 3. **Custom domain** (optional): project → Custom domains.
 4. No GitHub Secrets, Variables or Cloudflare API token are needed.
-5. **Create a fine-grained PAT for n8n**: Settings → Developer settings → Fine-grained tokens. Limit repository access to this repo and grant only `Contents: Read and write`.
+5. **Create a fine-grained PAT for n8n**: Settings → Developer settings → Fine-grained tokens. Limit repository access to this repo and grant `Contents: Read and write` and `Checks: Read` (the latter is used to confirm the deploy).
 6. **Edit `site.config.json`**: name, tagline, `url` (your `*.pages.dev` or custom domain), sections, primary color, footer.
 7. Delete the sample issues (keep a `.gitkeep` in `data/issues/`) and push to `main`. With no issues the site shows a "Coming soon" page.
 
@@ -87,16 +87,31 @@ In n8n, use an HTTP Request node: GET first (treat 404 as "no file yet", e.g. wi
 
 ## Confirming the deploy
 
-Cloudflare finishes building about a minute after the push. Poll `/latest.json` (add a random query parameter; the site also sends `Cache-Control: no-store` for it) and notify Telegram only once `date` equals today:
+A Cloudflare build usually finishes within a few minutes after the push, but it may sit in a queue for longer. Don't poll the site; use the **check run** that Cloudflare's Git integration posts on each commit. The same fine-grained PAT can read it (it needs `Checks: Read` in addition to `Contents: Read and write`).
+
+1. After the `PUT` to `/contents`, take `commit.sha` from the response.
+2. Wait about 45 seconds, then `GET https://api.github.com/repos/OWNER/REPO/commits/SHA/check-runs` with the same token.
+3. Find the Cloudflare check run (its `name` or `app.slug` contains "cloudflare"; look at your repo's checks once to confirm the exact name). If it isn't there yet, treat it as still pending.
+4. Every 30 seconds, check its `status`. When it is `completed`, look at `conclusion`:
+   - `success` → the site is live.
+   - anything else (`failure`, `cancelled`, `timed_out`, …) → the build failed. `details_url` links to the Cloudflare build log.
+5. Give up after `deployTimeoutMinutes` (default `20`) and treat it as a timeout.
+6. **Success:** send the issue URL to Telegram. **Failure or timeout:** send the reason and the build link (`details_url`).
 
 ```
-GET https://<your-site>/latest.json?t={{ $now.toMillis() }}
-→ {"date":"2026-11-10","edition":123,"url":"https://…/2026-11-10/"}
-condition: {{ $json.date === $now.setZone('Asia/Taipei').toFormat('yyyy-MM-dd') }}
-suggestion: every 30 seconds, at most 20 tries, then alert on timeout.
+GET https://api.github.com/repos/OWNER/REPO/commits/{{ commit.sha }}/check-runs
+Authorization: Bearer <PAT>
+Accept: application/vnd.github+json
+
+→ { "check_runs": [ { "name": "Cloudflare Pages", "status": "completed",
+                      "conclusion": "success", "details_url": "https://dash.cloudflare.com/…" } ] }
+
+loop:    wait 45 s, then every 30 s
+done:    status == "completed"   (success only if conclusion == "success")
+timeout: deployTimeoutMinutes (default 20)
 ```
 
-With no issues yet, `latest.json` is `{"date":null,"edition":0,...}`, which never matches a date.
+`/latest.json` is still published as a public endpoint for other uses (dashboards, monitors, other tools). It is not the deploy check: `{"date":"2026-11-10","edition":123,"url":"https://…/2026-11-10/"}`, or `{"date":null,"edition":0,...}` when there are no issues yet. The site sends `Cache-Control: no-store` for it.
 
 ## Data format
 

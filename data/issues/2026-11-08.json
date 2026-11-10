@@ -191,72 +191,6 @@
       ]
     },
     {
-      "id": "taiwan",
-      "items": [
-        {
-          "title": "[Sample] Taipei adds night bus routes, extended to 2 a.m. on weekends",
-          "summary": "The city is trialling three night routes along major corridors at regular bus fares.",
-          "why": "Affects night commuters and weekend travelers.",
-          "importance": 3,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-08/d1",
-          "original_title": "Night bus routes added in Taipei",
-          "original_lang": "en",
-          "published_at": "2026-11-08T06:30:00+08:00",
-          "tags": [
-            "transport",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Chip fabs expand, universities launch cross-department micro-programs",
-          "summary": "Several universities and industry partners opened six-week micro-programs covering process basics and data analysis; seats sold out.",
-          "why": "Industry–academia programs may become the norm for closing the talent gap.",
-          "importance": 4,
-          "source_name": "Sample Finance Daily",
-          "source_url": "https://example.com/sample/2026-11-08/d2",
-          "original_title": "Universities launch micro-programs for chip talent",
-          "original_lang": "en",
-          "published_at": "2026-11-08T05:40:00+08:00",
-          "tags": [
-            "industry",
-            "education",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Outer typhoon circulation brings brief showers to the northeast on Monday",
-          "summary": "The weather bureau expects higher rain chances in the early morning, turning cloudy by afternoon with slightly lower temperatures.",
-          "why": "Commuters should carry an umbrella.",
-          "importance": 2,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-08/d3",
-          "original_title": "Brief showers for the northeast on Monday",
-          "original_lang": "en",
-          "published_at": "2026-11-08T04:00:00+08:00",
-          "tags": [
-            "weather",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Night markets adopt mobile ordering; vendors complain about fees",
-          "summary": "A sample survey says about 40% of stalls use mobile ordering but many object to platform commissions and want government mediation.",
-          "why": "Digitization costs for small merchants are worth tracking.",
-          "importance": 2,
-          "source_name": "Sample Finance Daily",
-          "source_url": "https://example.com/sample/2026-11-08/d4",
-          "original_title": "Night market vendors complain about ordering fees",
-          "original_lang": "en",
-          "published_at": "2026-11-08T02:50:00+08:00",
-          "tags": [
-            "business",
-            "sample"
-          ]
-        }
-      ]
-    },
-    {
       "id": "world",
       "items": [
         {
@@ -360,7 +294,7 @@
   "stats": {
     "feeds": 39,
     "fetched": 796,
-    "kept": 21,
+    "kept": 17,
     "jev_cost_usd": 0.0011,
     "llm_cost_usd": 0.028
   }

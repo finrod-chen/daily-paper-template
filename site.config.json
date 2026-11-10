@@ -1,7 +1,7 @@
 {
   "name": "News Daily",
   "tagline": "Your morning briefing, edited by machines",
-  "description": "News Daily: an automatically edited daily newspaper covering AI, automation, biotech, Taiwan, world news and sports.",
+  "description": "News Daily: an automatically edited daily newspaper covering AI, automation, biotech, world news and sports.",
   "url": "https://news-daily.pages.dev",
   "timezone": "Asia/Taipei",
   "language": "en",
@@ -22,11 +22,6 @@
       "id": "biotech",
       "name": "Biotech",
       "color": "#047857"
-    },
-    {
-      "id": "taiwan",
-      "name": "Taiwan",
-      "color": "#be123c"
     },
     {
       "id": "world",

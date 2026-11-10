@@ -190,71 +190,6 @@
       ]
     },
     {
-      "id": "taiwan",
-      "items": [
-        {
-          "title": "[Sample] New quarter of energy subsidies announced, household tiers adjusted",
-          "summary": "The sample plan adjusts subsidy tiers so households with lower monthly usage receive a larger share of relief.",
-          "why": "Directly affects household electricity bills.",
-          "importance": 4,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-09/d1",
-          "original_title": "New energy subsidy plan announced",
-          "original_lang": "en",
-          "published_at": "2026-11-09T06:40:00+08:00",
-          "tags": [
-            "household",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Southern science park opens a shared lab that startups rent by the hour",
-          "summary": "The shared lab offers basic measurement equipment, billed by usage hours.",
-          "why": "Lowers the starting cost for hardware startups.",
-          "importance": 3,
-          "source_name": "Sample Finance Daily",
-          "source_url": "https://example.com/sample/2026-11-09/d2",
-          "original_title": "Shared lab opens in southern science park",
-          "original_lang": "en",
-          "published_at": "2026-11-09T05:15:00+08:00",
-          "tags": [
-            "startups",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] High-speed rail and conventional rail trial a joint ticket",
-          "summary": "Travelers can buy cross-system tickets on one platform, with a 10% discount during the trial.",
-          "why": "Easier transfers.",
-          "importance": 2,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-09/d3",
-          "original_title": "Joint rail ticket trial begins",
-          "original_lang": "en",
-          "published_at": "2026-11-09T03:50:00+08:00",
-          "tags": [
-            "transport",
-            "sample"
-          ]
-        },
-        {
-          "title": "[Sample] Ministry publishes this year’s independent bookstore grants",
-          "summary": "More than sixty shops receive grants, focused on community events and digitization.",
-          "why": "How independent bookstores plan to survive.",
-          "importance": 2,
-          "source_name": "Sample News Network",
-          "source_url": "https://example.com/sample/2026-11-09/d4",
-          "original_title": "Independent bookstore grant list released",
-          "original_lang": "en",
-          "published_at": "2026-11-09T02:05:00+08:00",
-          "tags": [
-            "culture",
-            "sample"
-          ]
-        }
-      ]
-    },
-    {
       "id": "world",
       "items": [
         {
@@ -358,7 +293,7 @@
   "stats": {
     "feeds": 39,
     "fetched": 831,
-    "kept": 21,
+    "kept": 17,
     "jev_cost_usd": 0.0013,
     "llm_cost_usd": 0.031
   }
