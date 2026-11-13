@@ -192,3 +192,12 @@ a:hover { color: var(--accent-ink); text-decoration-color: currentColor; }
   .colophon { background: none; color: #000; }
   .sec-head { position: static; }
 }
+
+/* 👍/👎 reader votes (n8n vote webhook) and feed-health notices */
+.vote { display: inline-flex; gap: 4px; margin-left: auto; }
+.vote a { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 28px; border: 1px solid var(--rule, #d8d2c4); border-radius: 14px; text-decoration: none; font-size: .9rem; filter: grayscale(.6); }
+.vote button { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 28px; border: 1px dashed var(--rule, #d8d2c4); border-radius: 14px; background: none; color: inherit; font: inherit; font-size: .9rem; cursor: pointer; filter: grayscale(.6); }
+.vote a:hover, .vote a:focus-visible, .vote button:hover, .vote button:focus-visible, .vote button[aria-pressed="true"] { filter: none; border-color: var(--accent); }
+.vote-note { margin: 6px 0 0; font-size: .75rem; color: var(--muted); }
+.notices { margin-top: 18px; padding: 10px 14px; border-left: 3px solid var(--accent); font-size: .8125rem; color: var(--muted); }
+.notices ul { margin: 4px 0 0; padding-left: 1.1em; }

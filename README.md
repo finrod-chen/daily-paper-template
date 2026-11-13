@@ -6,7 +6,7 @@ A static, newspaper-style daily site. **n8n** commits one JSON file per day, and
 - No external trackers. Fonts (Noto Serif / Noto Sans) load from Google Fonts with system-font fallbacks.
 - Mobile-first, dark mode (follows the system, manual toggle), basic SEO and Open Graph tags.
 
-> The three issues in `data/issues/` are **fictional sample data** (marked "[Sample]"). Delete them before going live.
+> `data/issues/` holds three **fictional sample issues** (marked "[Sample]") and one real example issue (2026-11-13) produced by the n8n workflow, with its vote links removed. They power the live demo. Delete them before going live.
 
 ## Architecture
 
@@ -115,7 +115,7 @@ timeout: deployTimeoutMinutes (default 20)
 
 ## Data format
 
-See `schema/issue.schema.json`. Required top-level fields: `date`, `generated_at`, `edition`, `headline`, `brief`, `sections`, `stats`. Each item requires `title`, `summary`, `why`, `importance` (1–5), `source_name` and `source_url`. Optional: `original_title`, `original_lang` (`en` | `zh`), `published_at`, `tags`, `image` (https URL), `image_alt`.
+See `schema/issue.schema.json`. Required top-level fields: `date`, `generated_at`, `edition`, `headline`, `brief`, `sections`, `stats`. Each item requires `title`, `summary`, `why`, `importance` (1–5), `source_name` and `source_url`. Optional: `original_title`, `original_lang` (`en` | `zh`), `published_at`, `tags`, `image` (https URL), `image_alt`, `feedback` (`{ "up": URL, "down": URL }`). Optional top level: `notices` (array of strings, shown as "Source health").
 
 ```json
 {
@@ -131,6 +131,12 @@ See `schema/issue.schema.json`. Required top-level fields: `date`, `generated_at
 ```
 
 Section `id`s should match `site.config.json`; an unknown id is appended at the end in the primary color (validation prints a warning). Items are sorted by `importance` (5 = large type) and capped at `max_items_per_section`. The `brief` is shown as a numbered list when it has 2–5 sentences.
+
+## Reader votes (👍 / 👎)
+
+When an item has `feedback.up` / `feedback.down`, each story gets 👍 / 👎 links. Each click is one GET to your n8n vote webhook (the workflow fills these links when its `feedbackWebhookUrl` setting is set), and the workflow uses the votes to re-weight sources and sections. Items without `feedback` show no buttons.
+
+For a public preview with no webhook, build with `DEMO_VOTES=1` (Cloudflare Pages: Settings → Variables) or set `"demo_votes": true` in `site.config.json`. Items without `feedback` then show inert 👍 / 👎 buttons that send nothing and only explain what they would do.
 
 ## License
 

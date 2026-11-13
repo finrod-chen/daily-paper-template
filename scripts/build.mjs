@@ -11,6 +11,9 @@ const cfg = JSON.parse(readFileSync(join(ROOT, 'site.config.json'), 'utf8'));
 const BASE = cfg.url.replace(/\/+$/, '');
 const TZ = cfg.timezone || 'Asia/Taipei';
 const MAX_DEFAULT = cfg.max_items_per_section ?? 6;
+// Demo mode for a public preview: no vote webhook, so 👍/👎 render as inert buttons that only explain themselves.
+// Turn on with the env var DEMO_VOTES=1 (e.g. in Cloudflare Pages) or "demo_votes": true in site.config.json.
+const DEMO_VOTES = process.env.DEMO_VOTES === '1' || cfg.demo_votes === true;
 
 // ---------- Locale: every UI string, date format and font lives here ----------
 const utcFmt = (opts, y, m, d) => new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', ...opts }).format(new Date(Date.UTC(y, m - 1, d)));
@@ -42,6 +45,11 @@ const T = {
   newTab: ' (opens in a new tab)',
   topStory: 'Top story',
   why: 'Why it matters',
+  voteLabel: 'Was this story worth it?',
+  voteUp: 'More like this',
+  voteDown: 'Less like this',
+  notices: 'Source health',
+  voteDemo: 'Demo only: no vote was sent. On your own site this click goes to your n8n vote webhook, and the workflow learns from it.',
   brief: 'Today’s brief',
   original: 'Original: ',
   count: (n) => `${n} ${n === 1 ? 'story' : 'stories'}`,
@@ -134,7 +142,13 @@ function meta(it) {
   // show the original title only when its language differs from the site language
   const orig = it.original_title && it.original_title !== it.title && (it.original_lang || T.baseLang) !== T.baseLang
     ? `<p class="orig" lang="${it.original_lang === 'zh' ? 'zh-Hant' : 'en'}">${T.original}${esc(it.original_title)}</p>` : '';
-  return `<div class="meta"><a class="src" href="${esc(it.source_url)}" target="_blank" rel="noopener">${esc(it.source_name)}<span class="sr-only">${T.newTab}</span></a>${time}${tags ? `<ul class="tags">${tags}</ul>` : ''}</div>${orig}`;
+  // 👍/👎 links come from n8n (item.feedback); each click is one GET to the n8n vote webhook, which learns from it.
+  const vote = it.feedback?.up && it.feedback?.down
+    ? `<span class="vote" role="group" aria-label="${T.voteLabel}"><a href="${esc(it.feedback.up)}" target="_blank" rel="nofollow noopener" title="${T.voteUp}" aria-label="${T.voteUp}">👍</a><a href="${esc(it.feedback.down)}" target="_blank" rel="nofollow noopener" title="${T.voteDown}" aria-label="${T.voteDown}">👎</a></span>`
+    : DEMO_VOTES
+      ? `<span class="vote vote-demo" role="group" aria-label="${T.voteLabel}" data-demo-msg="${esc(T.voteDemo)}"><button type="button" data-demo-vote title="${T.voteUp}" aria-label="${T.voteUp}">👍</button><button type="button" data-demo-vote title="${T.voteDown}" aria-label="${T.voteDown}">👎</button></span>`
+      : '';
+  return `<div class="meta"><a class="src" href="${esc(it.source_url)}" target="_blank" rel="noopener">${esc(it.source_name)}<span class="sr-only">${T.newTab}</span></a>${time}${tags ? `<ul class="tags">${tags}</ul>` : ''}${vote}</div>${orig}`;
 }
 const imgTag = (it) => it.image ? `<figure><img src="${esc(it.image)}" alt="${esc(it.image_alt || '')}" loading="lazy" referrerpolicy="no-referrer"></figure>` : '';
 const titleLink = (it) => `<a href="${esc(it.source_url)}" target="_blank" rel="noopener">${esc(it.title)}<span class="sr-only">${T.newTab}</span></a>`;
@@ -147,6 +161,12 @@ function briefHtml(brief) {
   const parts = brief.split(T.splitBrief).map((s) => s.trim()).filter(Boolean);
   const body = parts.length >= 2 && parts.length <= 5 ? `<ol>${parts.map((p) => `<li><span>${esc(p)}</span></li>`).join('')}</ol>` : `<p>${esc(brief)}</p>`;
   return `<section class="brief" aria-labelledby="brief-h"><div class="wrap"><h2 id="brief-h" class="label">${T.brief}</h2>${body}</div></section>`;
+}
+
+// Feed-health notices from n8n (issue.notices): feeds that keep failing or stopped publishing.
+function noticesHtml(list) {
+  if (!Array.isArray(list) || !list.length) return '';
+  return `<aside class="notices wrap" aria-label="${T.notices}"><p class="label">${T.notices}</p><ul>${list.map((n) => `<li>${esc(n)}</li>`).join('')}</ul></aside>`;
 }
 
 function issueParts(issue) {
@@ -173,6 +193,7 @@ function issueParts(issue) {
   const main = `<article class="issue">
 <section class="lead wrap" aria-labelledby="lead-h"><p class="kicker label">${T.topStory}</p><h2 id="lead-h">${titleLink(h)}</h2>${imgTag(h)}<div class="lead-body"><div><p class="dek">${esc(h.summary)}</p>${meta(h)}</div><aside class="note"><p class="label">${T.why}</p><p class="txt">${esc(h.why)}</p></aside></div></section>
 ${briefHtml(issue.brief)}
+${noticesHtml(issue.notices)}
 ${sectionsHtml}
 </article>`;
   return { secnav, main };

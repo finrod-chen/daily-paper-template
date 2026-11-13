@@ -14,6 +14,7 @@
       "type": "array",
       "items": { "$ref": "#/definitions/section" }
     },
+    "notices": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "Optional: feed-health notices from n8n" },
     "stats": {
       "type": "object",
       "required": ["feeds", "fetched", "kept", "jev_cost_usd", "llm_cost_usd"],
@@ -51,7 +52,13 @@
         "published_at": { "type": "string", "format": "date-time" },
         "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "image": { "type": "string", "format": "uri", "description": "Optional: image URL (https)" },
-        "image_alt": { "type": "string" }
+        "image_alt": { "type": "string" },
+        "feedback": {
+          "type": "object",
+          "required": ["up", "down"],
+          "description": "Optional: 👍/👎 vote links (each is a GET to the n8n vote webhook)",
+          "properties": { "up": { "type": "string", "format": "uri" }, "down": { "type": "string", "format": "uri" } }
+        }
       }
     }
   }

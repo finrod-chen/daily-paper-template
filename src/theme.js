@@ -27,3 +27,20 @@
     sync();
   });
 })();
+
+// Demo 👍/👎 (DEMO_VOTES builds only): nothing is sent; the click shows a short note under the story.
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('[data-demo-vote]');
+  if (!b) return;
+  var box = b.closest('.vote-demo');
+  var meta = box.closest('.meta') || box;
+  var note = meta.nextElementSibling && meta.nextElementSibling.classList.contains('vote-note') ? meta.nextElementSibling : null;
+  if (!note) {
+    note = document.createElement('p');
+    note.className = 'vote-note';
+    note.setAttribute('role', 'status');
+    meta.insertAdjacentElement('afterend', note);
+  }
+  note.textContent = box.getAttribute('data-demo-msg');
+  b.setAttribute('aria-pressed', 'true');
+});

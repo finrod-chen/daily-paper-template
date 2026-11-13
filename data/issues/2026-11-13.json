@@ -1,0 +1,402 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T05:53:43.312+08:00",
+  "edition": 124,
+  "headline": {
+    "title": "Analysis of 30 years of AAV gene therapy INDs",
+    "summary": "A study analyzing FDA Investigational New Drug submissions from 1995 to 2025 shows rapid growth in adeno-associated virus (AAV) gene therapy development and identifies common reasons for regulatory holds.",
+    "why": "Understanding regulatory challenges can improve success rates in gene therapy product development.",
+    "importance": 5,
+    "source_name": "Nature Biotechnology",
+    "source_url": "https://www.nature.com/articles/s41587-026-03378-9",
+    "original_title": "A comprehensive analysis of CBER experience with AAV gene therapy IND submissions",
+    "original_lang": "en",
+    "published_at": "2026-11-12T00:00:00.000Z",
+    "tags": [
+      "gene therapy",
+      "regulation",
+      "AAV"
+    ]
+  },
+  "brief": "US envoys met with President Putin in the Kremlin to advance Ukraine peace talks, planning further discussions with President Zelenskyy in Ireland. Meanwhile, the American Cancer Society now recommends routine PSA screening for prostate cancer in men aged 50 to 69, reversing previous guidelines. In technology, Nvidia confirmed it can implement anti-smuggling chip tracking measures required by new US legislation, addressing industry doubts.",
+  "sections": [
+    {
+      "id": "ai",
+      "items": [
+        {
+          "title": "Nvidia confirms chip tracking feasibility",
+          "summary": "Nvidia privately told a US representative that it can technically implement anti-smuggling chip tracking measures required by the Chip Security Act, despite public industry doubts about feasibility.",
+          "why": "This confirmation supports legislative efforts to secure semiconductor supply chains against smuggling.",
+          "importance": 4,
+          "source_name": "MIT Technology Review AI",
+          "source_url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+          "original_title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+          "original_lang": "en",
+          "published_at": "2026-11-12T20:16:24.000Z",
+          "tags": [
+            "semiconductors",
+            "security",
+            "policy"
+          ]
+        },
+        {
+          "title": "Google Search upgraded with Gemini 4 Hydrogen",
+          "summary": "Google has globally integrated Gemini 4 Hydrogen into Search, enhancing its ability to understand complex queries, provide relevant links, and deliver richer visual responses.",
+          "why": "This upgrade improves user experience by making search results more helpful and intuitive for complicated questions.",
+          "importance": 4,
+          "source_name": "TechCrunch AI",
+          "source_url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+          "original_title": "Google’s latest Search upgrade promises better answers to your most complicated questions",
+          "original_lang": "en",
+          "published_at": "2026-11-12T19:27:45.000Z",
+          "tags": [
+            "search",
+            "AI",
+            "product"
+          ]
+        },
+        {
+          "title": "Amplitude uses OpenAI to speed product improvements",
+          "summary": "Amplitude's product agent Wave, built mainly on OpenAI models, identifies development priorities, assists coding teams, and measures impact, enabling product improvements within 1–2 days.",
+          "why": "This demonstrates how AI can accelerate product development cycles and improve decision-making in software companies.",
+          "importance": 3,
+          "source_name": "OpenAI News",
+          "source_url": "https://openai.com/index/amplitude",
+          "original_title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+          "original_lang": "en",
+          "published_at": "2026-11-12T20:00:00.000Z",
+          "tags": [
+            "productivity",
+            "AI",
+            "software"
+          ]
+        },
+        {
+          "title": "Study finds AI chatbots recommend fake retail sites",
+          "summary": "A study by IP protection firm Podqi found that AI chatbots like ChatGPT, Gemini, and Perplexity sometimes direct shoppers to fake or risky retail websites when asked about products or purchasing options.",
+          "why": "This raises concerns about the reliability and safety of AI-driven shopping assistance for consumers.",
+          "importance": 3,
+          "source_name": "The Verge AI",
+          "source_url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+          "original_title": "AI chatbots are recommending fake retail websites, study finds",
+          "original_lang": "en",
+          "published_at": "2026-11-12T17:00:00.000Z",
+          "tags": [
+            "AI",
+            "ecommerce",
+            "security"
+          ]
+        },
+        {
+          "title": "OpenAI funds research on AI and children's safety",
+          "summary": "OpenAI has committed $2 million to support research focused on AI's risks and opportunities for children, including developing shared tools to measure these effects.",
+          "why": "This funding aims to improve understanding and mitigation of AI-related safety issues affecting young people.",
+          "importance": 3,
+          "source_name": "OpenAI News",
+          "source_url": "https://openai.com/index/children-first-declaration",
+          "original_title": "Supporting research on AI and children’s safety",
+          "original_lang": "en",
+          "published_at": "2026-11-12T00:00:00.000Z",
+          "tags": [
+            "AI",
+            "safety",
+            "research"
+          ]
+        },
+        {
+          "title": "Phota Labs automates photo editing with AI",
+          "summary": "Phota Labs uses AI to automate photo editing, enabling users to easily transform everyday photos into professional-quality images without manual effort.",
+          "why": "This product leverages AI to simplify creative workflows and enhance consumer photo editing experiences.",
+          "importance": 2,
+          "source_name": "TechCrunch AI",
+          "source_url": "https://techcrunch.com/2026/11/12/phota-labs-uses-ai-to-turn-everyday-photos-into-professional-looking-shots/",
+          "original_title": "Phota Labs uses AI to turn everyday photos into professional-looking shots",
+          "original_lang": "en",
+          "published_at": "2026-11-12T17:00:00.000Z",
+          "tags": [
+            "AI",
+            "imaging",
+            "product"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "items": [
+        {
+          "title": "Runway releases Praxis-1 robotics model",
+          "summary": "Runway launched Praxis-1, a world action model for robotics, now available with open weights. Partners include Noble Machines, Standard Bots, and Ultra, enabling developers to integrate this model into their robotics applications.",
+          "why": "Open access to Praxis-1's model weights allows faster development and deployment of robotics systems with improved action understanding.",
+          "importance": 4,
+          "source_name": "The Robot Report",
+          "source_url": "https://www.therobotreport.com/runways-praxis-1-world-action-model-for-robotics-is-now-available/",
+          "original_title": "Runway’s Praxis-1 world action model for robotics is now available",
+          "original_lang": "en",
+          "published_at": "2026-11-12T13:18:47.000Z",
+          "tags": [
+            "robotics",
+            "automation",
+            "software"
+          ]
+        },
+        {
+          "title": "n8n promotes democratized automation building",
+          "summary": "n8n discusses the trend of making automation building accessible beyond central teams. The platform is evolving to enable everyone in an organization to contribute to automation workflows, reflecting a shift in how automation is developed and maintained.",
+          "why": "Broadening automation development can accelerate innovation and reduce bottlenecks in organizational workflows.",
+          "importance": 3,
+          "source_name": "n8n Blog",
+          "source_url": "https://blog.n8n.io/the-future-of-work-is-built-by-everyone/",
+          "original_title": "The future of work is built by everyone",
+          "original_lang": "en",
+          "published_at": "2026-11-12T08:00:00.000Z",
+          "tags": [
+            "automation",
+            "workflow",
+            "software"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biotech",
+      "items": [
+        {
+          "title": "Blackstone invests $1.5B in Pfizer’s obesity drug",
+          "summary": "Blackstone has invested $1.5 billion to support Pfizer’s Phase 3 clinical program for a monthly GLP-1 shot for obesity, acquired from Metsera after a bidding war.",
+          "why": "This investment accelerates development of a novel obesity treatment with potential broad patient impact.",
+          "importance": 4,
+          "source_name": "BioPharma Dive",
+          "source_url": "https://www.biopharmadive.com/news/blackstone-pfizer-berobenatide-deal/874483/",
+          "original_title": "Blackstone bets $1.5B on Pfizer’s obesity drug",
+          "original_lang": "en",
+          "published_at": "2026-11-12T16:44:00.000Z",
+          "tags": [
+            "drug development",
+            "investment",
+            "obesity"
+          ]
+        },
+        {
+          "title": "American Cancer Society updates prostate cancer screening",
+          "summary": "The American Cancer Society reversed previous guidelines and now recommends routine PSA screening for prostate cancer in American men aged 50 to 69.",
+          "why": "This change could lead to earlier detection and treatment of prostate cancer, potentially improving outcomes.",
+          "importance": 4,
+          "source_name": "STAT News",
+          "source_url": "https://www.statnews.com/2026/11/12/health-news-experts-update-prostate-cancer-screening-guidelines-for-men/",
+          "original_title": "Experts update prostate cancer screening guidelines for men",
+          "original_lang": "en",
+          "published_at": "2026-11-12T12:32:57.000Z",
+          "tags": [
+            "cancer screening",
+            "prostate cancer",
+            "clinical guidelines"
+          ]
+        },
+        {
+          "title": "New detailed map of basal ganglia brain region",
+          "summary": "A large scientific collaboration produced the most detailed map to date of the basal ganglia, a brain region involved in many psychiatric and neurologic disorders.",
+          "why": "This map provides a foundational resource for understanding and treating diseases linked to basal ganglia dysfunction.",
+          "importance": 4,
+          "source_name": "STAT News",
+          "source_url": "https://www.statnews.com/2026/11/12/brain-map-basal-ganglia-offers-treatment-clues-parkinsons-schizophrenia/",
+          "original_title": "STAT+: Scientists debut map of basal ganglia, a key brain region involved in an array of diseases",
+          "original_lang": "en",
+          "published_at": "2026-11-12T16:00:00.000Z",
+          "tags": [
+            "neuroscience",
+            "brain mapping",
+            "disease research"
+          ]
+        },
+        {
+          "title": "FDA staffing shortages impact pharma industry",
+          "summary": "The FDA is experiencing a staffing shortage with over 1,000 open jobs following a mass staff exodus last year, affecting pharmaceutical industry operations.",
+          "why": "Reduced FDA capacity may delay drug approvals and regulatory processes, impacting drug development timelines.",
+          "importance": 3,
+          "source_name": "BioPharma Dive",
+          "source_url": "https://www.biopharmadive.com/news/fda-staffing-shortages-drug-reviews-pharma/874480/",
+          "original_title": "The FDA has over 1k open jobs — and the staffing shortage is hitting pharma",
+          "original_lang": "en",
+          "published_at": "2026-11-12T14:38:00.000Z",
+          "tags": [
+            "regulation",
+            "FDA",
+            "industry impact"
+          ]
+        },
+        {
+          "title": "Bristol Myers merges R&D departments to speed development",
+          "summary": "Bristol Myers is restructuring by merging its R&D departments and its research chief Robert Plenge is departing as part of this evolution.",
+          "why": "The restructuring aims to accelerate drug development and leverage new technologies more effectively.",
+          "importance": 3,
+          "source_name": "BioPharma Dive",
+          "source_url": "https://www.biopharmadive.com/news/bristol-myers-robert-plenge-cristian-massacesi-research-transition/874476/",
+          "original_title": "Bristol Myers research chief to depart in ‘evolution’ of company’s structure",
+          "original_lang": "en",
+          "published_at": "2026-11-12T16:03:00.000Z",
+          "tags": [
+            "R&D",
+            "corporate strategy",
+            "drug development"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "items": [
+        {
+          "title": "US envoys meet Putin, plan talks with Zelensky",
+          "summary": "US envoy Steve Witkoff said President Putin agreed to European negotiators joining the next round of Ukraine talks. US envoys met Putin in the Kremlin after talks in Abu Dhabi and plan to meet Ukrainian President Zelenskyy in Ireland.",
+          "why": "This development could advance diplomatic efforts to resolve the Russia-Ukraine conflict through multilateral negotiations.",
+          "importance": 5,
+          "source_name": "BBC World",
+          "source_url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+          "original_title": "US envoys head to meet Zelensky after talks with Putin in Moscow",
+          "original_lang": "en",
+          "published_at": "2026-11-12T21:00:42.000Z",
+          "tags": [
+            "Ukraine",
+            "Diplomacy",
+            "Russia"
+          ]
+        },
+        {
+          "title": "Israeli strike kills six at Gaza hospital",
+          "summary": "A missile hit surgical wards and intensive care units at Nasser hospital in southern Gaza, killing six Palestinians including a surgeon and a child. Israel said it targeted a Hamas commander, who was not found among the dead.",
+          "why": "The strike on a major hospital highlights the severe humanitarian impact of ongoing conflict in Gaza.",
+          "importance": 4,
+          "source_name": "BBC World",
+          "source_url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+          "original_title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+          "original_lang": "en",
+          "published_at": "2026-11-12T16:54:12.000Z",
+          "tags": [
+            "Middle East",
+            "Conflict",
+            "Humanitarian"
+          ]
+        },
+        {
+          "title": "Millions missing as Ebola staff unpaid, MSF warns",
+          "summary": "Medical staff fighting Ebola are unpaid, lack proper training, and face shortages of essential supplies, according to Médecins Sans Frontières. Millions of dollars intended for Ebola response are reportedly missing as the virus spreads.",
+          "why": "Funding and resource gaps threaten effective containment of Ebola, risking wider outbreaks and health crises.",
+          "importance": 4,
+          "source_name": "BBC World",
+          "source_url": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss",
+          "original_title": "Millions of Ebola dollars missing with staff unpaid while virus spreads, charity says",
+          "original_lang": "en",
+          "published_at": "2026-11-12T15:18:20.000Z",
+          "tags": [
+            "Health",
+            "Ebola",
+            "Funding"
+          ]
+        },
+        {
+          "title": "Five new miniature frog species found in Himalayas",
+          "summary": "Scientists discovered five new miniature frog species in the eastern Himalayas. These frogs evolved as the Himalayas rose and the Asian monsoon developed.",
+          "why": "The discovery adds to biodiversity knowledge and helps understand evolutionary processes linked to geological changes.",
+          "importance": 3,
+          "source_name": "BBC World",
+          "source_url": "https://www.bbc.co.uk/news/articles/c8kgkw7dr5rko?at_medium=RSS&at_campaign=rss",
+          "original_title": "Five new miniature frog species found in eastern Himalayas",
+          "original_lang": "en",
+          "published_at": "2026-11-12T11:07:19.000Z",
+          "tags": [
+            "Biology",
+            "Biodiversity",
+            "Research"
+          ]
+        },
+        {
+          "title": "Drought threatens Iraq's ancient marshes",
+          "summary": "Southern Iraq's unique marshes are reviving after five years of drought, but challenges remain for sustaining one of the world's oldest ways of life dependent on these wetlands.",
+          "why": "The marshes' health is crucial for preserving cultural heritage and ecological balance in the region.",
+          "importance": 3,
+          "source_name": "NPR World",
+          "source_url": "https://www.npr.org/2026/11/12/nx-s1-6026458/drought-threatens-iraqs-marshes-risking-one-of-the-oldest-ways-of-life",
+          "original_title": "Drought threatens Iraq's marshes, risking one of the oldest ways of life",
+          "original_lang": "en",
+          "published_at": "2026-11-12T09:31:34.000Z",
+          "tags": [
+            "Environment",
+            "Iraq",
+            "Climate"
+          ]
+        },
+        {
+          "title": "Ukrainian drone hits Russian warship in Baltic Sea",
+          "summary": "A Russian warship was struck by a Ukrainian drone in the Gulf of Finland, marking the first known Ukrainian drone attack on a Russian ship in the open Baltic Sea.",
+          "why": "This incident signals an escalation in naval tactics and drone warfare in the Russia-Ukraine conflict.",
+          "importance": 3,
+          "source_name": "BBC World",
+          "source_url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss",
+          "original_title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+          "original_lang": "en",
+          "published_at": "2026-11-12T20:09:16.000Z",
+          "tags": [
+            "Military",
+            "Ukraine",
+            "Russia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "items": [
+        {
+          "title": "Two pitchers unanimously win Cy Young awards",
+          "summary": "For only the third time in history, a pair of pitchers have been unanimous Cy Young Award winners, highlighting exceptional pitching performances this MLB season.",
+          "why": "Unanimous Cy Young wins underscore rare pitching excellence with measurable impact on team success.",
+          "importance": 4,
+          "source_name": "MLB.com",
+          "source_url": "https://www.mlb.com/news/2026-mlb-cy-young-award-winners",
+          "original_title": "Pair of flamethrowers are unanimous Cy Young winners for just 3rd time in history",
+          "original_lang": "en",
+          "published_at": "2026-11-12T01:15:00.000Z",
+          "tags": [
+            "MLB",
+            "Awards",
+            "Pitching"
+          ]
+        },
+        {
+          "title": "McIlroy starts strong at DP World Tour Championship",
+          "summary": "Rory McIlroy opened with a three-under round as he aims to equal Colin Montgomerie's record of eight Race to Dubai titles at the DP World Tour Championship.",
+          "why": "McIlroy's performance could set a new benchmark in golf's Race to Dubai series, influencing the sport's competitive standards.",
+          "importance": 3,
+          "source_name": "BBC Sport",
+          "source_url": "https://www.bbc.co.uk/sport/golf/articles/cwlymny900ezo?at_medium=RSS&at_campaign=rss",
+          "original_title": "McIlroy makes strong start in bid to equal Montgomerie's record",
+          "original_lang": "en",
+          "published_at": "2026-11-12T14:13:27.000Z",
+          "tags": [
+            "Golf",
+            "DP World Tour",
+            "Records"
+          ]
+        }
+      ]
+    }
+  ],
+  "notices": [
+    "ScienceDaily Stem Cells: no new post for 8 days",
+    "ESPN: parse failed 2 run(s) in a row: empty response"
+  ],
+  "stats": {
+    "feeds": 24,
+    "fetched": 2668,
+    "kept": 22,
+    "jev_cost_usd": 0,
+    "llm_cost_usd": 0.01349,
+    "scorer": "openai",
+    "scored": 106,
+    "off_scope_dropped": 0,
+    "same_event_merged": 3,
+    "votes_used": 11,
+    "feeds_flagged": 2
+  }
+}
