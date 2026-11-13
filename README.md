@@ -2,6 +2,8 @@
 
 A static, newspaper-style daily site. **n8n** commits one JSON file per day, and **Cloudflare Pages** (Git integration) builds and deploys it. Fork it, edit `site.config.json`, and you have your own paper.
 
+**Live demo:** https://daily-paper-template.pages.dev (built with `DEMO_VOTES=1`, so 👍 / 👎 send nothing).
+
 - No framework, no dependencies. One Node 20 build script, plain HTML and CSS, a few lines of JS for dark mode.
 - No external trackers. Fonts (Noto Serif / Noto Sans) load from Google Fonts with system-font fallbacks.
 - Mobile-first, dark mode (follows the system, manual toggle), basic SEO and Open Graph tags.
